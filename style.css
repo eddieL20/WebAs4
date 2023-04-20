@@ -1,6 +1,6 @@
 #MyTitle{
     text-align: center;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(157, 167, 255);
     padding: 15px;
     border: 2px solid black;
     clear: right;
@@ -8,7 +8,7 @@
 
 #MyFoot{
     text-align: center;
-    background-color: rgb(207, 207, 207);
+    background-color: rgb(157, 167, 255);
     padding: 15px;
     border: 2px solid black;
     clear: left;
@@ -36,13 +36,13 @@ li{
     border: 2px dashed black;
     margin: 5px;
     padding: 5px;
-    background-color: rgb(191, 191, 191);
+    background-color: rgb(103, 182, 232);
 }
 
 .set{
     border: 2px solid black;
     margin: 2px 2px;
-    padding:3px;
+    padding:5px;
     width:200px;
     height: 350px;
     text-align: center;
@@ -55,7 +55,7 @@ h1{
 
 
 li:hover{
-    background-color: rgb(0, 187, 234);
+    background-color: rgb(164, 237, 255);
 }
 
 ul{
@@ -65,7 +65,7 @@ ul{
     margin: auto;
 }
 
-@media(min-width: 769px){
+@media only screen and (min-width: 769px){
     .set{
         width:23%;
         display: inline-block;
@@ -75,17 +75,19 @@ ul{
     }
 }
 
-@media(max-width: 768px){
+@media only screen and (max-width: 768px){
     .set{
         width: 47.7%;
         float: left;
+        padding: 0px;
+        margin: 0.5px
     }
     #Bdiv{
         clear:right;
     }
 }
 
-@media(max-width: 480px){
+@media only screen and (max-width: 480px){
     .set{
         clear:both;
         width: 100%;
