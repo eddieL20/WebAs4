@@ -1,95 +1,94 @@
-#MyTitle{
-    text-align: center;
-    background-color: rgb(157, 167, 255);
-    padding: 15px;
-    border: 2px solid black;
-    clear: right;
+#MyTitle {
+  text-align: center;
+  margin: 5px;
+  background-color: rgb(157, 167, 255);
+  padding: 15px;
+  border: 2px solid black;
+  clear: right;
 }
 
-#MyFoot{
-    text-align: center;
-    background-color: rgb(157, 167, 255);
-    padding: 15px;
-    border: 2px solid black;
-    clear: left;
-}
-
-#Adiv{
-    background: rgb(101, 101, 250);
-}
-
-#Bdiv{
-    background: rgb(103, 231, 199);
-}
-
-#Cdiv{
-    background: rgb(101, 101, 250);
-}
-
-#Ddiv{
-    background: rgb(103, 231, 199);
-}
-
-li{
-    height: 35px;
-    width: 70px;
-    border: 2px dashed black;
-    margin: 5px;
-    padding: 5px;
-    background-color: rgb(103, 182, 232);
-}
-
-.set{
-    border: 2px solid black;
-    margin: 2px 2px;
-    padding:5px;
-    width:200px;
-    height: 350px;
-    text-align: center;
-    display: inline;
-}
-
-h1{
-    text-align: center;
+#MyFoot {
+  text-align: center;
+  margin:5px;
+  background-color: rgb(157, 167, 255);
+  padding: 15px;
+  border: 2px solid black;
+  clear: left;
 }
 
 
-li:hover{
-    background-color: rgb(164, 237, 255);
+.set.A,
+.set.C {
+  background-color: aquamarine;
+  margin: 5px;
+  border: 2px solid black;
 }
 
-ul{
-    list-style: none;
-    display: block;
-    text-align: center;
-    margin: auto;
+.set.B,
+.set.D {
+  background-color: rgb(135, 167, 255);
+  margin: 5px;
+  border: 2px solid black;
 }
 
-@media only screen and (min-width: 769px){
-    .set{
-        width:23%;
-        display: inline-block;
-        align-content: center;
-        padding-left: 6px;
-        margin: 1px auto;
-    }
+
+
+li {
+  height: 35px;
+  width: 70px;
+  border: 2px dashed black;
+  margin: 5px;
+  padding: 5px;
+  background-color: rgb(103, 182, 232);
 }
 
-@media only screen and (max-width: 768px){
-    .set{
-        width: 47.7%;
-        float: left;
-        padding: 0px;
-        margin: 0.5px
-    }
-    #Bdiv{
-        clear:right;
-    }
+h1 {
+  text-align: center;
 }
 
-@media only screen and (max-width: 480px){
-    .set{
-        clear:both;
-        width: 100%;
-    }
+li:hover {
+  background-color: rgb(164, 237, 255);
+}
+
+ul {
+  list-style: none;
+  text-align: center;
+  margin: auto;
+}
+
+@media only screen and (min-width: 769px) {
+  .grid-container{
+    display: flex;
+    justify-content: center;
+  }
+  .A,
+  .B,
+  .C,
+  .D {
+    width: 25%;
+  }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+
+  .A, .B, .C, .D{
+    width: 46%;
+  }
+  .grid-container{
+    display: flex;
+    grid-auto-columns: auto;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .set{
+    margin: 10px;
+  }
+
+}
+
+@media only screen and (max-width: 480px) {
+  .set {
+    clear: both;
+    width: 95%;
+  }
 }
